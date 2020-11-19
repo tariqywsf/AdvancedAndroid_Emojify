@@ -31,6 +31,10 @@ public class Emojifier {
         // Detect the faces
         SparseArray<Face> faces = detector.detect(frame);
 
+        if (!detector.isOperational()) {
+            Toast.makeText(context, "Face detector dependencies are not yet available.", Toast.LENGTH_SHORT).show();
+        }
+
         // Log the number of faces
         Log.d(LOG_TAG, "detectFaces: number of faces = " + faces.size());
 
