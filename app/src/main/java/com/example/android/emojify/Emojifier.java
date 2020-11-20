@@ -15,8 +15,6 @@ import com.google.android.gms.vision.face.FaceDetector;
 import timber.log.Timber;
 
 public class Emojifier {
-    public static final String LOG_TAG = Emojifier.class.getSimpleName();
-
     private static final float EMOJI_SCALE_FACTOR = .9f;
     private static final double SMILING_PROB_THRESHOLD = .15;
     private static final double EYE_OPEN_PROB_THRESHOLD = .5;

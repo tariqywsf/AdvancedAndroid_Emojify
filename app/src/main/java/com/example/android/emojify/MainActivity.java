@@ -46,9 +46,6 @@ import timber.log.Timber;
 
 public class MainActivity extends AppCompatActivity {
 
-    // TODO (1): Create a Java class called Emojifier
-        // TODO (2): Create a static method in the Emojifier class called detectFaces() which detects and logs the number of faces in a given bitmap.
-
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private static final int REQUEST_STORAGE_PERMISSION = 1;
 
