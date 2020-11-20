@@ -41,6 +41,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.io.File;
 import java.io.IOException;
 
+import timber.log.Timber;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -70,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Set up Timber
+        Timber.plant(new Timber.DebugTree());
 
         // Bind the views
         mImageView = findViewById(R.id.image_view);
